@@ -14,20 +14,44 @@ type Pages = {
   "/": {
     params: {};
   };
+  "/showcase/narrative": {
+    params: {};
+  };
+  "/showcase/simulated": {
+    params: {};
+  };
+  "/showcase/editorial": {
+    params: {};
+  };
 };
 
 type RouteFiles = {
-  "root.tsx": {
+  "root.js": {
     id: "root";
-    page: "/";
+    page: "/" | "/showcase/narrative" | "/showcase/simulated" | "/showcase/editorial";
   };
   "routes/_index.tsx": {
     id: "routes/_index";
     page: "/";
   };
+  "routes/showcase.narrative.tsx": {
+    id: "routes/showcase.narrative";
+    page: "/showcase/narrative";
+  };
+  "routes/showcase.simulated.tsx": {
+    id: "routes/showcase.simulated";
+    page: "/showcase/simulated";
+  };
+  "routes/showcase.editorial.tsx": {
+    id: "routes/showcase.editorial";
+    page: "/showcase/editorial";
+  };
 };
 
 type RouteModules = {
-  "root": typeof import("./app/root.tsx");
+  "root": typeof import("./app/root.js");
   "routes/_index": typeof import("./app/routes/_index.tsx");
+  "routes/showcase.narrative": typeof import("./app/routes/showcase.narrative.tsx");
+  "routes/showcase.simulated": typeof import("./app/routes/showcase.simulated.tsx");
+  "routes/showcase.editorial": typeof import("./app/routes/showcase.editorial.tsx");
 };

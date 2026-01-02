@@ -1,32 +1,26 @@
 import posthog from 'posthog-js';
-
 const POSTHOG_KEY = import.meta.env.VITE_POSTHOG_KEY;
 const POSTHOG_HOST = import.meta.env.VITE_POSTHOG_HOST || 'https://app.posthog.com';
-
 /**
  * ZUCKERBERG-LEVEL ANALYTICS (Cambridge Analytica Grade)
  * This utility ensures zero-drop tracking and aggressive autocapture
  * for maximum investor-grade data.
  */
-
 export function initAnalytics() {
     if (typeof window !== 'undefined' && POSTHOG_KEY) {
         posthog.init(POSTHOG_KEY, {
             api_host: POSTHOG_HOST,
             capture_pageview: false, // Handled manually by RR7 navigation
             persistence: 'localStorage',
-
             // MILITARY GRADE AUTOCAPTURE
             autocapture: true,
             capture_performance: true,
             session_recording: {
                 maskAllInputs: false, // Careful: Enable only for non-PII fields if needed
             },
-
             // Zero-latency tracking
             advanced_disable_decide: false,
         });
-
         // Capture device info and timezone aggressively
         posthog.register({
             platform: 'zen-template',
@@ -36,18 +30,16 @@ export function initAnalytics() {
         });
     }
 }
-
 export function trackPageView() {
     if (typeof window !== 'undefined' && POSTHOG_KEY) {
         posthog.capture('$pageview');
     }
 }
-
 /**
  * Intelligent Action Tracker
  * Captures the 'Why' behind the click.
  */
-export function trackAction(name: string, properties?: Record<string, any>) {
+export function trackAction(name, properties) {
     if (typeof window !== 'undefined' && POSTHOG_KEY) {
         posthog.capture(name, {
             ...properties,
@@ -56,8 +48,7 @@ export function trackAction(name: string, properties?: Record<string, any>) {
         });
     }
 }
-
-export function identifyUser(id: string, email?: string, traits?: Record<string, any>) {
+export function identifyUser(id, email, traits) {
     if (typeof window !== 'undefined' && POSTHOG_KEY) {
         posthog.identify(id, {
             email,
@@ -66,12 +57,11 @@ export function identifyUser(id: string, email?: string, traits?: Record<string,
         });
     }
 }
-
 /**
  * Form Tracking (Cambridge Analytica Pattern)
  * Tracks partial form fills and abandonments.
  */
-export function trackFormInteraction(formId: string, fieldName: string, action: 'focus' | 'blur' | 'change') {
+export function trackFormInteraction(formId, fieldName, action) {
     if (typeof window !== 'undefined' && POSTHOG_KEY) {
         posthog.capture('form_interaction', {
             form_id: formId,

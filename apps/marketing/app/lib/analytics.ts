@@ -21,7 +21,6 @@ export function initAnalytics() {
             capture_performance: true,
             session_recording: {
                 maskAllInputs: false, // Careful: Enable only for non-PII fields if needed
-                recordCanvas: true,
             },
 
             // Zero-latency tracking

@@ -2,5 +2,33 @@
 @import "../../../packages/ui/src/base.css";
 
 @theme {
-  --font-sans: "Inter", "Outfit", system-ui, sans-serif;
+  --color-zinc-950: #09090b;
+  --color-zinc-900: #18181b;
+  --color-zinc-800: #27272a;
+  --color-zinc-400: #a1a1aa;
+
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+
+  --ease-sovereign: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out-sovereign: cubic-bezier(0.76, 0, 0.24, 1);
+
+  --color-background: var(--color-zinc-950);
+  --color-foreground: #ffffff;
+  --color-border: rgba(255, 255, 255, 0.1);
+}
+
+@layer base {
+  body {
+    @apply bg-zinc-950 text-white selection:bg-white/10 selection:text-white;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.glass-zinc {
+  @apply bg-zinc-900/50 backdrop-blur-xl border border-white/10 shadow-2xl;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-b from-white to-zinc-400;
 }

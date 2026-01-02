@@ -1,0 +1,4 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+export default function Header({ menuItems, logo }) {
+    return (_jsx("header", { className: "fixed top-0 left-0 right-0 z-50 bg-black/50 backdrop-blur-md border-b border-white/5", children: _jsxs("div", { className: "max-w-7xl mx-auto px-6 h-16 md:h-20 flex items-center justify-between", children: [_jsx("div", { className: "flex items-center gap-4", children: logo }), _jsx("nav", { className: "hidden md:flex items-center gap-8", children: menuItems.map((item) => (_jsx("a", { href: item.to, className: "text-sm font-medium text-gray-400 hover:text-white transition-colors", children: item.text }, item.to))) }), _jsx("button", { className: "px-4 py-2 bg-white text-black text-sm font-medium rounded hover:bg-gray-100 transition-colors", children: "Contact" })] }) }));
+}

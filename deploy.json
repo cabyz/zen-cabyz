@@ -1,7 +1,7 @@
 {
-    "name": "zen",
-    "resource_uuid": "ocs88kkw88oookc8cc0kswso",
-    "repository": "git@github.com:cabyz/zen-test.git",
+    "name": "zen-cabyz",
+    "resource_uuid": "eskcooo4wkogo08swc4gc8sk",
+    "repository": "git@github.com:cabyz/zen-cabyz.git",
     "private_key_id": 5,
     "base_directory": "/",
     "deployment": {
@@ -26,6 +26,6 @@
         "VITE_CLERK_PUBLISHABLE_KEY": "pk_test_dummy",
         "CONVEX_URL": "https://dummy.convex.cloud",
         "CLERK_PUBLISHABLE_KEY": "pk_test_dummy",
-        "CACHE_BUSTER": "5"
+        "CACHE_BUSTER": "6"
     }
 }
