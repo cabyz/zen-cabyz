@@ -1,0 +1,24 @@
+{
+    "name": "zen-marketing",
+    "repository": "https://github.com/cabyz/zen-test",
+    "base_directory": "/",
+    "deployment": {
+        "type": "cancel-on-build",
+        "preset": "node",
+        "framework": "react-router",
+        "branch": "master"
+    },
+    "build": {
+        "pack": "nixpacks",
+        "install_command": "pnpm install --no-frozen-lockfile",
+        "command": "pnpm --filter marketing build",
+        "start_command": "pnpm --filter marketing start",
+        "output_dir": "apps/marketing/build"
+    },
+    "port": 3000,
+    "health_check_enabled": false,
+    "env": {
+        "NODE_ENV": "production",
+        "NIXPACKS_NODE_VERSION": "20"
+    }
+}

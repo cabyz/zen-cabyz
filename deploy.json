@@ -1,0 +1,31 @@
+{
+    "name": "zen",
+    "resource_uuid": "ocs88kkw88oookc8cc0kswso",
+    "repository": "git@github.com:cabyz/zen-test.git",
+    "private_key_id": 5,
+    "base_directory": "/",
+    "deployment": {
+        "type": "cancel-on-build",
+        "preset": "node",
+        "framework": "react-router",
+        "branch": "master"
+    },
+    "build": {
+        "pack": "dockercompose",
+        "install_command": "pnpm install --no-frozen-lockfile --prod=false",
+        "command": "pnpm --filter app build",
+        "start_command": "pnpm --filter app start",
+        "output_dir": "apps/app/build"
+    },
+    "port": 3000,
+    "health_check_enabled": false,
+    "env": {
+        "NODE_ENV": "production",
+        "NIXPACKS_NODE_VERSION": "20",
+        "VITE_CONVEX_URL": "https://dummy.convex.cloud",
+        "VITE_CLERK_PUBLISHABLE_KEY": "pk_test_dummy",
+        "CONVEX_URL": "https://dummy.convex.cloud",
+        "CLERK_PUBLISHABLE_KEY": "pk_test_dummy",
+        "CACHE_BUSTER": "5"
+    }
+}

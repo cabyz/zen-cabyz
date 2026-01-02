@@ -1,0 +1,53 @@
+{
+    "hero": {
+        "title": "Zen",
+        "titleHighlight": "Project",
+        "subtitle": "10x Engineering for the Solo Founder",
+        "ctaPrimary": "Get Started",
+        "ctaSecondary": "Documentation"
+    },
+    "features": [
+        {
+            "title": "React Router 7",
+            "description": "Latest React Router with file-based routing, loaders, and actions.",
+            "icon": "Zap"
+        },
+        {
+            "title": "Turborepo",
+            "description": "Monorepo with shared packages, optimized builds, and remote caching.",
+            "icon": "Layers"
+        },
+        {
+            "title": "Convex Backend",
+            "description": "Real-time database with TypeScript-first APIs and zero config.",
+            "icon": "Database"
+        },
+        {
+            "title": "Clerk Auth",
+            "description": "Complete authentication with social login, MFA, and user management.",
+            "icon": "Shield"
+        },
+        {
+            "title": "Tailwind CSS 4",
+            "description": "Utility-first CSS with new Oxide engine for 10x faster builds.",
+            "icon": "Palette"
+        },
+        {
+            "title": "One-Click Deploy",
+            "description": "Deploy to Coolify with a single command. Infrastructure as code.",
+            "icon": "Rocket"
+        }
+    ],
+    "testimonials": [
+        {
+            "quote": "This template saved me weeks of setup time. Everything just works.",
+            "author": "Solo Founder",
+            "role": "Indie Hacker"
+        }
+    ],
+    "cta": {
+        "title": "Ready to Build?",
+        "description": "Clone the template and start shipping in minutes.",
+        "buttonText": "Use This Template"
+    }
+}

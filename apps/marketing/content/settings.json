@@ -1,0 +1,13 @@
+{
+    "siteName": "Zen Template",
+    "siteDescription": "High-speed React Router 7 starter kit for modern web applications",
+    "socialLinks": {
+        "twitter": "https://twitter.com/cabyz",
+        "github": "https://github.com/cabyz/zen-test",
+        "linkedin": ""
+    },
+    "analytics": {
+        "posthogKey": "",
+        "gaId": ""
+    }
+}

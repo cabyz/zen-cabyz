@@ -1,0 +1,23 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "jsx": "react-jsx",
+        "baseUrl": ".",
+        "rootDirs": [
+            ".",
+            "./.react-router/types"
+        ],
+        "paths": {
+            "~/*": [
+                "./app/*"
+            ]
+        },
+        "types": [
+            "vite/client"
+        ]
+    },
+    "include": [
+        "app",
+        ".react-router/types"
+    ]
+}

@@ -1,0 +1,129 @@
+
+> marketing@ build /home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/apps/marketing
+> react-router build
+
+vite v6.4.1 building for production...
+transforming...
+✓ 1594 modules transformed.
+✗ Build failed in 3.10s
+[vite]: Rollup failed to resolve import "@/components/navbar" from "/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/apps/marketing/app/routes/_index.tsx".
+This is most likely unintended because it can break your application at runtime.
+If you do want to externalize this module explicitly add it to
+`build.rollupOptions.external`
+    at viteLog (file:///home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/vite@6.4.1_@types+node@25.0.3_jiti@2.6.1_lightningcss@1.30.2_terser@5.44.1/node_modules/vite/dist/node/chunks/dep-D4NMHUTW.js:46374:15)
+    at file:///home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/vite@6.4.1_@types+node@25.0.3_jiti@2.6.1_lightningcss@1.30.2_terser@5.44.1/node_modules/vite/dist/node/chunks/dep-D4NMHUTW.js:46432:18
+    at onwarn (/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/@react-router+dev@7.11.0_@react-router+serve@7.11.0_react-router@7.11.0_react-dom@19.2.3_reac_27c6cnp6o5aqjv6owpcdgq3gmm/node_modules/@react-router/dev/dist/cli/index.js:1657:11)
+    at file:///home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/vite@6.4.1_@types+node@25.0.3_jiti@2.6.1_lightningcss@1.30.2_terser@5.44.1/node_modules/vite/dist/node/chunks/dep-D4NMHUTW.js:46430:7
+    at onRollupLog (file:///home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/vite@6.4.1_@types+node@25.0.3_jiti@2.6.1_lightningcss@1.30.2_terser@5.44.1/node_modules/vite/dist/node/chunks/dep-D4NMHUTW.js:46422:5)
+    at onLog (file:///home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/vite@6.4.1_@types+node@25.0.3_jiti@2.6.1_lightningcss@1.30.2_terser@5.44.1/node_modules/vite/dist/node/chunks/dep-D4NMHUTW.js:46072:7)
+    at file:///home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/rollup@4.54.0/node_modules/rollup/dist/es/shared/node-entry.js:21032:32
+    at Object.logger [as onLog] (file:///home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/rollup@4.54.0/node_modules/rollup/dist/es/shared/node-entry.js:22919:9)
+    at ModuleLoader.handleInvalidResolvedId (file:///home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/rollup@4.54.0/node_modules/rollup/dist/es/shared/node-entry.js:21663:26)
+    at file:///home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/rollup@4.54.0/node_modules/rollup/dist/es/shared/node-entry.js:21621:26 {
+  watchFiles: [
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/apps/marketing/app/root.tsx',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/apps/marketing/app/routes/_index.tsx',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/@react-router+dev@7.11.0_@react-router+serve@7.11.0_react-router@7.11.0_react-dom@19.2.3_reac_27c6cnp6o5aqjv6owpcdgq3gmm/node_modules/@react-router/dev/dist/config/defaults/entry.client.tsx',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/react@19.2.3/node_modules/react/index.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/react@19.2.3/node_modules/react/jsx-runtime.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/react-dom@19.2.3_react@19.2.3/node_modules/react-dom/client.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/react-router@7.11.0_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/react-router/dist/development/dom-export.mjs',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/apps/marketing/package.json',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/react@19.2.3/node_modules/react/cjs/react-jsx-runtime.production.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/react@19.2.3/node_modules/react/cjs/react.production.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/react-dom@19.2.3_react@19.2.3/node_modules/react-dom/index.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/react-router@7.11.0_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/react-router/dist/development/chunk-YNUBSHFH.mjs',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/react-router@7.11.0_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/react-router/dist/development/chunk-JMJ3UQ3L.mjs',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/react-dom@19.2.3_react@19.2.3/node_modules/react-dom/cjs/react-dom-client.production.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/scheduler@0.27.0/node_modules/scheduler/index.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/react-dom@19.2.3_react@19.2.3/node_modules/react-dom/cjs/react-dom.production.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/cookie@1.1.1/node_modules/cookie/dist/index.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/set-cookie-parser@2.7.2/node_modules/set-cookie-parser/lib/set-cookie.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/scheduler@0.27.0/node_modules/scheduler/cjs/scheduler.production.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/apps/marketing/app/lib/analytics.ts',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/apps/marketing/app/app.css',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/tailwindcss@4.1.18/node_modules/tailwindcss/index.css',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/packages/ui/src/base.css',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/apps/marketing/deploy.json',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/apps/marketing/app/routes.ts',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/apps/marketing/app/components/orbit-model.tsx',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/apps/marketing/app/components/navbar.tsx',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/apps/marketing/app/components/portfolio-carousel.tsx',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/apps/marketing/app/components/21st-navbar.tsx',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/apps/marketing/app/components/spline-canvas.tsx',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/apps/marketing/app/routes/posts.$slug.tsx',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/apps/marketing/app/routes/keystatic.tsx',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/apps/marketing/KEYSTATIC_GUIDE.md',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/apps/marketing/nixpacks.json',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/apps/marketing/.react-router/types/app/+types/root.ts',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/apps/marketing/.react-router/types/app/routes/+types/_index.ts',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/apps/marketing/.react-router/types/+server-build.d.ts',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/apps/marketing/.react-router/types/+future.ts',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/apps/marketing/.react-router/types/+routes.ts',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/apps/marketing/content/settings.json',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/apps/marketing/content/homepage.json',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/apps/marketing/tsconfig.json',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/apps/marketing/keystatic.config.ts',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/apps/marketing/react-router.config.ts',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/apps/marketing/vite.config.ts',
+    '*',
+    '.react-router/**/*.{aspx,astro,cjs,css,cts,eex,erb,gjs,gts,haml,handlebars,hbs,heex,html,jade,js,json,jsx,liquid,md,mdx,mjs,mts,mustache,njk,nunjucks,php,pug,py,razor,rb,rhtml,rs,slim,svelte,tpl,ts,tsx,twig,vue}',
+    'app/**/*.{aspx,astro,cjs,css,cts,eex,erb,gjs,gts,haml,handlebars,hbs,heex,html,jade,js,json,jsx,liquid,md,mdx,mjs,mts,mustache,njk,nunjucks,php,pug,py,razor,rb,rhtml,rs,slim,svelte,tpl,ts,tsx,twig,vue}',
+    'content/**/*.{aspx,astro,cjs,css,cts,eex,erb,gjs,gts,haml,handlebars,hbs,heex,html,jade,js,json,jsx,liquid,md,mdx,mjs,mts,mustache,njk,nunjucks,php,pug,py,razor,rb,rhtml,rs,slim,svelte,tpl,ts,tsx,twig,vue}',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/react-router@7.11.0_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/react-router/dist/development/index.mjs',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/lucide-react.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/posthog-js@1.313.0/node_modules/posthog-js/dist/module.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/index.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/alarm-clock-check.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/alarm-clock-plus.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/arrow-down-wide-narrow.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/arrow-down-z-a.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/arrow-down-a-z.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/arrow-up-a-z.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/arrow-up-z-a.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/alarm-clock-minus.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/axis-3d.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/badge-check.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/between-horizontal-end.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/between-horizontal-start.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/book-dashed.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/arrow-up-narrow-wide.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/braces.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/captions.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/chart-bar-big.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/chart-bar.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/chart-area.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/chart-candlestick.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/chart-column-big.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/chart-column.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/chart-line.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/chart-no-axes-column-increasing.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/chart-no-axes-column.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/chart-no-axes-gantt.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/chart-pie.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/chart-scatter.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/circle-alert.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/circle-arrow-down.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/circle-arrow-left.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/circle-arrow-out-down-left.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/circle-arrow-out-down-right.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/circle-arrow-out-up-left.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/chart-column-increasing.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/circle-arrow-right.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/circle-arrow-up.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/circle-check-big.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/circle-check.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/circle-arrow-out-up-right.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/circle-chevron-down.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/circle-chevron-right.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/circle-chevron-left.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/circle-chevron-up.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/circle-divide.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/circle-gauge.js',
+    '/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/node_modules/.pnpm/lucide-react@0.468.0_react@19.2.3/node_modules/lucide-react/dist/esm/icons/circle-help.js',
+    ... 1501 more items
+  ]
+}
+/home/charlie/lifeos/20_Areas/Coding/active/cabyz-zen/apps/marketing:
+ ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  marketing@ build: `react-router build`
+Exit status 1

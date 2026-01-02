@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  marketing:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: marketing
+    restart: always
+    environment:
+      - PORT=3000
+    ports:
+      - "3000"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.${SERVICE_NAME:-zen}-marketing.rule=Host(`${MARKETING_DOMAIN:-zentemplate.cabyz.com}`)"
+      - "traefik.http.routers.${SERVICE_NAME:-zen}-marketing.entrypoints=https"
+      - "traefik.http.routers.${SERVICE_NAME:-zen}-marketing.tls=true"
+      - "traefik.http.routers.${SERVICE_NAME:-zen}-marketing.tls.certresolver=letsencrypt"
+      - "traefik.http.services.${SERVICE_NAME:-zen}-marketing.loadbalancer.server.port=3000"
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: app
+    restart: always
+    environment:
+      - PORT=3000
+    ports:
+      - "3001:3000"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.${SERVICE_NAME:-zen}-app.rule=Host(`${APP_DOMAIN:-app.zentemplate.cabyz.com}`)"
+      - "traefik.http.routers.${SERVICE_NAME:-zen}-app.entrypoints=https"
+      - "traefik.http.routers.${SERVICE_NAME:-zen}-app.tls=true"
+      - "traefik.http.routers.${SERVICE_NAME:-zen}-app.tls.certresolver=letsencrypt"
+      - "traefik.http.services.${SERVICE_NAME:-zen}-app.loadbalancer.server.port=3000"

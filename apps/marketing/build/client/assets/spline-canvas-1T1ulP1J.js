@@ -1,0 +1,1 @@
+import{p as e}from"./chunk-JMJ3UQ3L-DA8ds6Ek.js";function i({scene:s,className:t}){return e.jsx("div",{className:t,style:{background:"#000"},children:e.jsx("div",{className:"w-full h-full flex items-center justify-center text-zinc-800 text-xs",children:"3D_ENGINE_OFFLINE"})})}export{i as default};
